@@ -13,6 +13,16 @@ importers:
         version: 2.3.10
 
   worker:
+    dependencies:
+      '@hono/zod-validator':
+        specifier: 0.7.6
+        version: 0.7.6(hono@4.11.3)(zod@4.2.1)
+      hono:
+        specifier: 4.11.3
+        version: 4.11.3
+      zod:
+        specifier: 4.2.1
+        version: 4.2.1
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: 0.11.1
@@ -21,7 +31,7 @@ importers:
         specifier: 4.20251225.0
         version: 4.20251225.0
       '@types/node':
-        specifier: ^25.0.3
+        specifier: 25.0.3
         version: 25.0.3
       typescript:
         specifier: 5.9.3
@@ -490,6 +500,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@hono/zod-validator@0.7.6':
+    resolution: {integrity: sha512-Io1B6d011Gj1KknV4rXYz4le5+5EubcWEU/speUjuw9XMMIaP3n78yXLhjd2A3PXaXaUwEAluOiAyLqhBEJgsw==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.25.0 || ^4.0.0
+
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -900,6 +916,10 @@ packages:
   glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
 
+  hono@4.11.3:
+    resolution: {integrity: sha512-PmQi306+M/ct/m5s66Hrg+adPnkD5jiO6IjA7WhWw0gSBSo1EcRegwuI1deZ+wd5pzCGynCcn2DprnE4/yEV4w==}
+    engines: {node: '>=16.9.0'}
+
   is-arrayish@0.3.4:
     resolution: {integrity: sha512-m6UrgzFVUYawGBh1dUsWR5M2Clqic9RVXC/9f8ceNlv2IcO9j9J/z8UoCLPqtsPBFNzEpfR3xftohbfqDx8EQA==}
 
@@ -1178,6 +1198,9 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
+  zod@4.2.1:
+    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
+
 snapshots:
 
   '@biomejs/biome@2.3.10':
@@ -1445,6 +1468,11 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.2':
     optional: true
+
+  '@hono/zod-validator@0.7.6(hono@4.11.3)(zod@4.2.1)':
+    dependencies:
+      hono: 4.11.3
+      zod: 4.2.1
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
@@ -1818,6 +1846,8 @@ snapshots:
 
   glob-to-regexp@0.4.1: {}
 
+  hono@4.11.3: {}
+
   is-arrayish@0.3.4: {}
 
   js-tokens@9.0.1: {}
@@ -2141,3 +2171,5 @@ snapshots:
   zod@3.22.3: {}
 
   zod@3.25.76: {}
+
+  zod@4.2.1: {}

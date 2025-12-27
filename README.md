@@ -117,7 +117,7 @@ curl "https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://opencode-te
 
 ## Environment Variables
 
-Copy `.env.local` and fill in the required values:
+Copy `.env.example` to `.env.local` and fill in the required values:
 
 | Variable | Description |
 |----------|-------------|
