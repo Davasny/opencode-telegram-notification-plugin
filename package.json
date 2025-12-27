@@ -1,0 +1,18 @@
+{
+  "name": "opencode-telegram-notification-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.18.2",
+  "scripts": {
+    "dev": "cd worker && pnpm dev",
+    "deploy": "cd worker && pnpm deploy",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "typecheck": "cd worker && pnpm typecheck",
+    "test": "cd worker && pnpm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10"
+  }
+}
