@@ -95,18 +95,6 @@ To redeploy after changes, just run:
 cd worker && pnpm exec wrangler deploy
 ```
 
-### Automated Deployment (GitHub Actions)
-
-Push to `main` branch triggers automatic deployment via GitHub Actions.
-
-### Required GitHub Secrets (for automated deployment)
-
-| Secret | Description |
-|--------|-------------|
-| `CLOUDFLARE_API_TOKEN` | Cloudflare API token with Workers permissions |
-| `CLOUDFLARE_ACCOUNT_ID` | Your Cloudflare account ID |
-| `BOT_TOKEN` | Telegram bot token from BotFather |
-
 ### Set Webhook
 
 After deployment, set the Telegram webhook:
